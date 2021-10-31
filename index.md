@@ -143,4 +143,4 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 ```
 ###Problems that Occured
-The first problem that I ran into was not specifying the correct version of linux rather than the correct version, “Other Linux 5.x and later kernel 64 bit”, and booting the system in BIOS rather than UEFI. Another problem I ran into was that some packages were failing to download, in my case plasma and kde-applications for the DE, and was solved by updating.
+The first problem that I ran into was not specifying the correct version of linux rather than the correct version, “Other Linux 5.x and later kernel 64 bit”, and booting the system in BIOS rather than UEFI. Another problem I ran into was that some packages were failing to download, in my case plasma and kde-applications for the DE, and was solved by updating. I also missed steps such as installing and setting up grub which had me restart my process a couple of times.
