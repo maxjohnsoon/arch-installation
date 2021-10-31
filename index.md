@@ -132,7 +132,7 @@ sudo pacman -S openssh
 ```
 zsh
 ```
-Sudo pacman -S zsh zsh-completions
+sudo pacman -S zsh zsh-completions
 ```
 ### Alias Setup
 ```
