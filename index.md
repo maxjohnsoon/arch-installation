@@ -74,20 +74,20 @@ nano /etc/hosts 
 ::1		localhost
 127.0.1.1	archmax.localdomain	archmax
 ```
-###Grub
+### Grub
 ```
 Paceman -s grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant os-prober motors dosftools base-level linux-headers
 Grub-install —target=x86_64-efi —efi-directory=/boot/EFI —bootloader-id=GRUB
 Grub-mkconfig -o /boot/grub/grub.cfg
 ```
-###Reboot of System
+### Reboot of System
 ```
 exit
 umount -a
 ```
 Since I am in a VM I did not type the command reboot but rather restarted the VM and then logged back into root
 
-###Arch Specifications
+### Arch Specifications
 Enabled NetworkManager so my Arch could have access to networks.
 ```
 Systemctl start NetworkManager
@@ -134,7 +134,7 @@ zsh
 ```
 Sudo pacman -S zsh zsh-completions
 ```
-###Alias Setup
+### Alias Setup
 ```
 alias ll='ls -la'
 alias cd..='cd ..'
