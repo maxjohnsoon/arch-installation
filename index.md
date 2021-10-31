@@ -7,7 +7,7 @@ To install Arch Linux I used the Arch Linux Wiki’s installation guide (https:/
 ### VMware Fusion Set Up
 I first started with downloading the arch linux torrent file and used bittorrent to convert the torrent file into a .iso file. For this installation of Arch Linux, I used VMWare Fusion to download Arch Linux on a virtual machine. When first setting up, I selected the version “Other Linux 5.x and later kernel 64 bit”, specified UEFI for the boot firmware, set ram to 2GB, and set the hard drive space to 20GB.
 
-Once this was set, I loaded it into Arch. I first checked to see if there was an internet connection and set the time to mt timezone
+Once this was set, I loaded it into Arch. I first checked to see if there was an internet connection and set the time to my timezone
 ```markdown
 ping Google.com
 timedatectl set-timezone America/Chicago
@@ -115,11 +115,11 @@ EDITOR=nano visudo
 ```
 Here I downloaded and installed the packages needed for the KDE desktop enviorment to be set up
 ```
-Paceman -S xorg
-Pacman -S dddm
-Systemctl enable sddm
+paceman -S xorg
+pacman -S dddm
+systemctl enable sddm
 pacman -Syu telegram-desktop 
-Pacman -S plasma kde-applications
+pacman -S plasma kde-applications
 ```
 ### Other Downloads
 Firefox
@@ -142,3 +142,5 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 ```
+###Problems that Occured
+The first problem that I ran into was not specifying the correct version of linux rather than the correct version, “Other Linux 5.x and later kernel 64 bit”, and booting the system in BIOS rather than UEFI. Another problem I ran into was that some packages were failing to download, in my case plasma and kde-applications for the DE, and was solved by updating.
