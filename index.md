@@ -1,5 +1,5 @@
 ## Arch Linux Installation
-# Max Johnson
+### Max Johnson
 
 To install Arch Linux I used the Arch Linux Wiki’s installation guide (https://wiki.archlinux.org/title/Installation_guide) and this youtube guide (https://www.youtube.com/watch?v=RJt4i89Ofsw) to assist me through the process.
 
